@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Analyze{% endblock %}
+
+{% block main %}
+    <h1>Check Your Text</h1>
+    <p class="lead">Paste a passage. Each detector scores it separately</p>
+
+    <form action="/analyze" method="post" class="analyze">
+        <label for="input_text">Text to analyze</label>
+        <textarea id="input_text" name="input_text" rows="10" maxlength="5000"
+                  placeholder="Paste up to 5,000 characters"></textarea>
+        <button type="submit">Analyze text</button>
+    </form>
+
+{% endblock %}

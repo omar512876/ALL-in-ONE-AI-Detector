@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block main %}
+    <h1>Results</h1>
+    <p class="lead">Each detector scored your text separately.</p>
+
+    {% for r in results %}
+        <article class="card">
+            <h3>{{ r.name }}</h3>
+            {% if r.error %}
+                <p class="muted">Unavailable: {{ r.error }}</p>
+            {% else %}
+                <p class="score {% if r.score < 35 %}low{% elif r.score < 65 %}mid{% else %}high{% endif %}">
+                    {{ r.score|round|int }}% likely AI
+                </p>
+            {% endif %}
+        </article>
+    {% endfor %}
+
+    <a class="button" href="/analyze">Analyze another text</a>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Error {{ code }}{% endblock %}
+
+{% block main %}
+    <section class="apology" role="alert">
+        <!-- role="alert" is for accessibility : screen reader ( for blind people)  reads a page from the top  in order but with alert it interrupts and reads that text right away -->
+        <p class="apology-code">{{ code }}</p>
+        <h1>Something went wrong</h1>
+        <p class="lead">{{ message }}</p>
+        <!-- runs the JavaScript history.back(), which does the same thing as pressing the browser’s Back button. -->
+        <a class="button" href="javascript:history.back()">Go back</a>
+
+        <a class="link-secondary" href="/">Return home</a>
+    </section>
+{% endblock %}
