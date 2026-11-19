@@ -1,9 +1,5 @@
 # ALL in ONE AI-detector
 
-**CS50x 2026 Final Project** by Omar Mouaddeb ([omar512876](https://github.com/omar512876))
-
-#### YouTube Video : [https://www.youtube.com/watch?v=ia3u_ijombs]
-
 ## Description
 
 This is a small web app I built with Python and Flask. You paste a piece of text, and it tells you how likely it is that the text was written by an AI. It does this with two different detectors and shows you a separate score from each one, for example "72% likely AI". The score is green when it's low, orange in the middle and red when it's high.
@@ -53,9 +49,6 @@ AI detection is not reliable, and I don't want to pretend this project fixes tha
 - Long texts are cut, so only the first part is analyzed.
 - Low perplexity doesn't prove a text is AI. Simple or formal writing can have low perplexity too, and so can writing by people who are not native English speakers.
 - The classifier can be wrong, and how well it works depends on the style, length and topic of the text and on the data it was trained on.
-## Use of AI tools
-
-I got help from Claude (Anthropic) with undrestanding the structure of `perplexity.py` and `bert_classifier.py`, and `styles.css` as I wrote in the comments in  those files. I rewrote and tested the code myself.
 
 ## Technologies
 
