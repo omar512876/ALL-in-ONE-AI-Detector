@@ -7,7 +7,6 @@ from detectors.base import Detector
 MODEL_NAME = "gpt2"
 MIN_TOKENS = 20
 
-# Structure adapted with help from Claude; I rewrote and tested it myself.
 
 
 class Perplexity(Detector):
