@@ -52,4 +52,4 @@ AI detection is not reliable, and I don't want to pretend this project fixes tha
 
 ## Technologies
 
-Python, Flask, PyTorch, Hugging Face Transformers, HTML, CSS and Jinja.
+Python, Flask, PyTorch, Hugging Face Transformers, HTML,CSS..
