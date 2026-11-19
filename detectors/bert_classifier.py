@@ -22,7 +22,6 @@ class DistilBertDetector(Detector):
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
         self.model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
         self.model.eval()
-        # i used Claude AI to explain the logic and structure while developing this code.
     # overwrite the analyze function
 
     def analyze(self, text):
